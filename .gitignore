@@ -1,0 +1,8 @@
+# 个人数据与配置（不上传）
+data/
+logs/
+config.json
+CLAUDE.local.md
+*.env
+__pycache__/
+.DS_Store

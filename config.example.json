@@ -1,0 +1,102 @@
+{
+  "secrets_dir": "~/.config/schedule-assistant",
+  "accounts": [
+    {
+      "address": "you@gmail.com",
+      "label": "Gmail",
+      "host": "imap.gmail.com",
+      "env_file": "mail.env",
+      "user_var": "GMAIL_USER",
+      "pass_var": "GMAIL_APP_PASSWORD"
+    },
+    {
+      "address": "you@163.com",
+      "label": "163",
+      "host": "imap.163.com",
+      "env_file": "mail.env",
+      "user_var": "MAIL163_USER",
+      "pass_var": "MAIL163_AUTH_CODE"
+    },
+    {
+      "address": "you@your-university.edu.cn",
+      "label": "学校",
+      "host": "imap.qiye.163.com",
+      "env_file": "mail.env",
+      "user_var": "WORK_USER",
+      "pass_var": "WORK_PASS"
+    }
+  ],
+  "important_senders": [
+    "edu.cn",
+    "editorialmanager.com",
+    "manuscriptcentral.com",
+    "elsevier.com",
+    "springer",
+    "wiley.com"
+  ],
+  "important_keywords": [
+    "审稿",
+    "评审",
+    "邀请",
+    "通知",
+    "截止",
+    "答辩",
+    "会议",
+    "合同",
+    "发票",
+    "报销",
+    "申报",
+    "催",
+    "review",
+    "revision",
+    "invitation",
+    "deadline",
+    "decision",
+    "correction",
+    "requires",
+    "reminder"
+  ],
+  "ignore_senders": [
+    "noreply",
+    "no-reply",
+    "newsletter",
+    "marketing",
+    "substack.com"
+  ],
+  "brief_times": [
+    "08:00",
+    "12:30",
+    "21:00"
+  ],
+  "mail_interval_min": 5,
+  "ignore_subjects": [],
+  "reminder_policy": {
+    "_说明": "提前量 5d=5天 12h=12小时 30m=30分钟 0d=当天；只有日期的截止以 date_anchor 为当天基准时刻",
+    "date_anchor": "09:00",
+    "date": [
+      "1d",
+      "0d"
+    ],
+    "timed": [
+      "1d",
+      "1h"
+    ],
+    "by_list": {
+      "论文": [
+        "5d",
+        "1d",
+        "0d"
+      ],
+      "基金": [
+        "5d",
+        "1d",
+        "0d"
+      ],
+      "教学": [
+        "3d",
+        "1d",
+        "0d"
+      ]
+    }
+  }
+}
